@@ -12,6 +12,8 @@ import { BaseAccessory } from "./BaseAccessory";
 import { TuyaDeviceDefaults } from "../config";
 import { TuyaDevice } from "../api/response";
 
+CurrentTemperatureCharacteristic = (CurrentTemperatureCharacteristic-30)/2;
+
 export class ClimateAccessory extends BaseAccessory {
   constructor(
     platform: TuyaWebPlatform,
